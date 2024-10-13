@@ -30,7 +30,7 @@ export const actions = {
             predPic: `/anno/${index}.jpg`,
             boxPic: `/box/${index}.png`
         }));
-        return { list: imageUrls };
+        return { list: imageUrls , startDate, endDate };
     },
 };
 
