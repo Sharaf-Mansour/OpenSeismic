@@ -18,5 +18,12 @@
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 {#if form} 
-<img src={form.src}>
+
+{#each form.list as image}
+<h1>1</h1>
+    <img src={image.predPic} alt="Seismic Image" class="img-fluid mb-3" />
+    <br>
+    <img src={image.boxPic} alt="Seismic Image" class="img-fluid mb-3" />
+{/each}
+
 {/if}
